@@ -3,21 +3,51 @@
 // Think of it as a pretty container to logically separate different data points.
 
 
-import React from 'react';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
-const Exhibit = () => {
+const bull = (
+  <Box
+    component="span"
+    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+  >
+    •
+  </Box>
+);
 
-return (
-    <header>IP addresses
-        <p>any additional info</p>
-    </header>
+const card = (
+  <React.Fragment>
+    <CardContent>
+      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        Exhibit Component
+      </Typography>
+      <Typography variant="h5" component="div">
+        Data Heading
+      </Typography>
+      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        child
+      </Typography>
+      <Typography variant="body2">
+        additional info about data
+        <br />
+        {'more info'}
+      </Typography>
+    </CardContent>
+    <CardActions>
+      <Button size="small">Button</Button>
+    </CardActions>
+  </React.Fragment>
+);
 
-
-)}
-
-
-
-
-
-
-export default Exhibit;
+export default function Exhibit() {
+  return (
+    <Box sx={{ minWidth: 275 }}>
+      <Card variant="outlined">{card}</Card>
+    </Box>
+  );
+}
