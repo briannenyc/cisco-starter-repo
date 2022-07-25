@@ -15,7 +15,7 @@ function UserAddress(props) {
             const json = await response.json();
         
             return json.data;
-            
+
             
         }
         grabApis();
@@ -25,6 +25,8 @@ function UserAddress(props) {
     console.log(addresses)
 
 return (
+    // map over the addresses
+    // separate them by their props
     <div>
         {addresses.map((address) => {
             return (

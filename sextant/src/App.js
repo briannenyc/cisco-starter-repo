@@ -8,8 +8,13 @@ function App() {
   return (
     <div className="App">
       <Banner></Banner>
-      <Exhibit></Exhibit>
-      <UserAddress></UserAddress>
+      <Exhibit> 
+        <UserAddress>IPv4</UserAddress>
+      </Exhibit>
+      <Exhibit> 
+        <UserAddress>IPv6</UserAddress>
+      </Exhibit>
+      
      <p>Brianne Nunnelley</p>
     </div>
   );

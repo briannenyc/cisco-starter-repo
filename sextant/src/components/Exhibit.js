@@ -38,9 +38,7 @@ const card = (
         {'more info'}
       </Typography>
     </CardContent>
-    <CardActions>
-      <Button size="small">Button</Button>
-    </CardActions>
+   
   </React.Fragment>
 );
 
