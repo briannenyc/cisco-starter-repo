@@ -7,7 +7,7 @@ const Banner = () => {
 return (<header style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", alignItems:"center", width:"100%", height:"5vw" }}>
 <p>Sextant</p>
 
-<a style={{ color:"grey", marginBottom:"0px"}}href="https://github.com/briannenyc/cisco-starter-repo">Click here for github repo</a>
+<p style={{ color:"grey"}}>Cisco</p>
 </header>
 
 
